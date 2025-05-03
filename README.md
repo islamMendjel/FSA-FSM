@@ -1,27 +1,27 @@
-# TL1
-This C program implements a finite automate to analyze words in a text file based on their composition of letters and digits. It reads input from a file (test.txt) and classifies each word into one of two categories: accepted or rejected, according to predefined rules.
-(Length paire of just chiffers or length paire of a word start with letter and the rest is mix (chiffres,letters))
+# 🔤 LanguageTheory-AEF-
 
-Features:
+A foundational C program that implements a finite automaton to analyze and classify words from a text file based on their composition of letters and digits.
 
-    Implements a finite automaton with six states (q0 to q5).
-    Classifies words based on the presence of letters (L) and digits (C).
-    Utilizes file I/O for reading input from a text file.
-    Handles various symbols as word delimiters (e.g., space, punctuation, newline).
-    Outputs the classification of each word along with the transitions between states.
+---
 
-Usage:
+## 📚 Features
 
-    Ensure a text file named test.txt is present in the same directory as the executable.
-    Run the program.
-    Check the console output for word classifications and state transitions.
+- Implements a finite automaton with six states (`q0` to `q5`).
+- Classifies words into:
+  - **Accepted**: Words that are either composed solely of digits with even length or start with a letter followed by a mix of letters and digits.
+  - **Rejected**: Words that do not meet the above criteria.
+- Utilizes file I/O to read input from `test.txt`.
+- Handles various delimiters such as spaces, punctuation, and newlines.
+- Outputs the classification of each word along with the state transitions.
 
-Note:
+---
 
-    Words containing both letters and digits are classified as rejected (q5).
-    Words classified as accepted are those consisting entirely of letters (q2) or digits (q4).
+## 🛠️ Usage
 
-File Structure:
+1. **Prepare the Input File**:
+   - Create a text file named `test.txt` in the same directory as the program.
+   - Populate it with words or sentences to be analyzed.
 
-    automaton.c: Main C source code file containing the finite automaton implementation.
-    test.txt: Input text file used for word analysis.
+2. **Compile the Program**:
+   ```bash
+   gcc main.c -o automaton
