@@ -1,4 +1,4 @@
-# 🔤  Finite State Machine (FSM) and Finite State Automaton (FSA)
+# 🔤  Finite State Machine (FSM) or Finite State Automaton (FSA)
 
 A foundational C program that implements a finite automaton to analyze and classify words from a text file based on their composition of letters and digits.
 
